@@ -4,7 +4,7 @@
       <marquee><h5 style="color: #2B3777">Thống kê tình hình dịch bệnh nCoV gây ra ở các quốc gia</h5></marquee>
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4 col-lg-4 col-12">
           <div class="form-group">
             <input type="text" v-model="search" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Tìm kiếm quốc gia">
           </div>
@@ -27,7 +27,7 @@
           <tbody>
           <tr v-if="loading">
             <div class="position-relative">
-              <img style="width: 200px; height: 200px;position: fixed; top:50%;left: 50%;transform: translate(-50%,-50%)" src="../assets/loading.gif">
+              <img style="width: 200px; height: 200px;position: fixed; top:70%;left: 50%;transform: translate(-50%,-50%)" src="../assets/loading.gif">
             </div>
           </tr>
           <tr v-for="(data, i) in filterCountry" :key="i">
@@ -94,7 +94,7 @@
     max-width: 700px;
   }
   .text-red{
-    color:red;
+    color:white;
   }
   textarea:focus,
   textarea.form-control:focus,
